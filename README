@@ -4,6 +4,7 @@ prepare
 1).download the ...squashfs.img file not the img.gz subfix file.
 2).convert the downloaded file with dd option bs=128000 conv=sync
 3).convert the converted file with dd to vdi with vboxmanage tool
+4).resize the vdi image file or the image size is too small to install other tools
 
 install
 1).set two network adapters with bridged network
