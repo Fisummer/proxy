@@ -9,5 +9,7 @@ prepare
 install
 1).set two network adapters with bridged network
 2).update opkg install shadowsocks-libev luci-app-shadowsocks-libev (ca-certificates ca-bundle note:curl command tool need these two dependencies to work for https connection)
+ps:for install 2) maybe opkg install openssl-util this package will help for the curl deal with https too
+
 3).configure shadowsocks and dns(local server to 127.0.0.1#5300)
 done;
