@@ -1,0 +1,12 @@
+running lede on windows platform
+
+prepare
+1).download the ...squashfs.img file not the img.gz subfix file.
+2).convert the downloaded file with dd option bs=128000 conv=sync
+3).convert the converted file with dd to vdi with vboxmanage tool
+
+install
+1).set two network adapters with bridged network
+2).update opkg install shadowsocks-libev luci-app-shadowsocks-libev (ca-certificates ca-bundle note:curl command tool need these two dependencies to work for https connection)
+3).configure shadowsocks and dns(local server to 127.0.0.1#5300)
+done;
